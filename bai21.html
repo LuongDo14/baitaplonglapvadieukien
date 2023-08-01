@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nhienLieu = +prompt("Hay nhap so nhien lieu: ");
+        var soPhiHanhGia = +prompt("Hay nhap so phi hanh gia: ");
+        var doCaoDatToi = +prompt("Do cao: ");
+
+        // doCaoDatToi = 1000km
+        // => 1000/50 = 20 lan dot
+        // => 100 * soPhiHanhGia
+        // => 100 * soPhiHanhGia * 20 = so nhien lieu can
+        // => nhien lieu con lai = nhienLieu - so nhien lieu can
+        console.log("Nhien lieu con lai: ", nhienLieu - 2 * soPhiHanhGia * doCaoDatToi);
+
+        // doCaoDatToi = x
+        // => lan dot
+        // => 100 * soPhiHanhGia
+        // => 100 * soPhiHanhGia * x/50 =  so nhien lieu can
+        // => 0 = nhienLieu - so nhien lieu can => nhienLieu = so nhien lieu can
+        // => 100 * soPhiHanhGia * x/50 = nhienLieu
+        // => 2 * x * soPhiHanhGia = nhienLieu
+        // => x = nhienLieu/(soPhiHanhGia*2)
+        console.log("Do cao toi da: ", nhienLieu / (soPhiHanhGia * 2));
+    </script>
+
+</body>
+</html>
